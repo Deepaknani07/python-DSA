@@ -7,10 +7,9 @@ def smallest(num):
     return res
 
 if __name__ == '__main__':
-    n =14
+    n =10
     n1 =n+1
     while (smallest(n)*2 != smallest(n1)):
-        n1 = n1 +1
-                     
+        n1 = n1 +1                
     print(n1)
         
