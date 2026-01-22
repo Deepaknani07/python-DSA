@@ -12,3 +12,5 @@ if __name__ == '__main__':
         r = check_happy(r)
         if r==1: 
             print("happy")
+        if r == 4:
+            print("not happy")
