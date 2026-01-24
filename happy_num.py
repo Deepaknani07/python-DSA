@@ -10,5 +10,7 @@ if __name__ == '__main__':
     r = check_happy(n) 
     while r!=1 and r!=4: 
         r = check_happy(r)
-        if r==1: 
-            print("happy")
+    if r==1: 
+        print("happy")
+    if r == 4: 
+        print("not happy")
