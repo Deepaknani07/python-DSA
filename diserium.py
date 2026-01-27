@@ -1,22 +1,25 @@
-def get_cont(num):
-    count = 0
-    while num != 0:
+def countfact(num):
+    count = 0 
+    while (num!=0):
         num = num//10
-        count = count +1
+        count += 1
     return count
 
-def deserium(num):
-    sum = 0
-    while num !=0:
-        rem = num % 10
-        sum = sum + rem ** (get_cont(num))
-        num = num //10
-    return sum
 
-if __name__ == '__main__':
+def desire(num):
+    count = countfact(num)
+    res = 0
+    while (num!=0):
+        rem = num % 10
+        res = res + rem ** count
+        count -=1
+        num = num // 10
+    return res
+
+if __name__  == '__main__':
     n = int(input("enter the number:"))
-    d =deserium(n)
-    if n==d:
-        print(f"{n} is a deserium number")
+    a =desire(n)
+    if n == a:
+        print(f"{n} is a desire")
     else:
-        print(f"{n} is not a desrium numbers")
+        print(f"{n} is not a desire")
