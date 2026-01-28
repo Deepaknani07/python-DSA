@@ -12,4 +12,5 @@ def cumm(l):
 if __name__ == '__main__':
     l  = [3,5,7,6,4,9,2]
     c = cumm(l)
+    
     print(c)
